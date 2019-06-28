@@ -1,4 +1,4 @@
-package ds.practice.others;
+package com.practice.hackerrank;
 
 public class KangroosJump {
 

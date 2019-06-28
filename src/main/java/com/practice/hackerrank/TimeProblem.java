@@ -1,4 +1,4 @@
-package ds.practice.string;
+package com.practice.hackerrank;
 
 public class TimeProblem {
 

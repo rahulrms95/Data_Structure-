@@ -1,10 +1,10 @@
-package ds.tree.utility;
+package ds.practice.tree.utility;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import ds.tree.pojo.TreeNode;
+import ds.practice.tree.pojo.TreeNode;
 
 public class TreeUtility<K> {
 

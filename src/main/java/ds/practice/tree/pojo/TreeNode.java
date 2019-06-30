@@ -1,4 +1,4 @@
-package ds.tree.pojo;
+package ds.practice.tree.pojo;
 
 public class TreeNode<K> {
 

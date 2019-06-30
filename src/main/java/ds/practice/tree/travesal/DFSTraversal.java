@@ -1,11 +1,11 @@
-package ds.tree.travesal;
+package ds.practice.tree.travesal;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import ds.tree.pojo.TreeNode;
-import ds.tree.utility.TreeUtility;
+import ds.practice.tree.pojo.TreeNode;
+import ds.practice.tree.utility.TreeUtility;
 
 public class DFSTraversal {
 	

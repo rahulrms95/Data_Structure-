@@ -1,4 +1,4 @@
-package ds.tree.bst;
+package ds.practice.tree.bst;
 
 public class BST
 {

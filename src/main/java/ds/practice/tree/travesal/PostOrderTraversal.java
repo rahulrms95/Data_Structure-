@@ -1,8 +1,8 @@
-package ds.tree.travesal;
+package ds.practice.tree.travesal;
 
-import ds.tree.pojo.TreeNode;
+import ds.practice.tree.pojo.TreeNode;
 
-public class PreOrderTraversal implements Traversal<Integer>{
+public class PostOrderTraversal implements Traversal<Integer>{
 
 	@Override
 	public void traversal(TreeNode<Integer> treeNode) {
@@ -12,10 +12,9 @@ public class PreOrderTraversal implements Traversal<Integer>{
 		{
 			return;
 		}
-		
-		System.out.print(treeNode.getValue()+" ");
 		traversal(treeNode.left);
 		traversal(treeNode.right);
-	 
+		System.out.print(treeNode.getValue()+" ");
+	
 	}
 }

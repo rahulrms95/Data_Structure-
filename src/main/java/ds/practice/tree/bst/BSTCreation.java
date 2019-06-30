@@ -1,9 +1,9 @@
-package ds.tree.bst;
+package ds.practice.tree.bst;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ds.tree.pojo.TreeNode;
+import ds.practice.tree.pojo.TreeNode;
 
 public class BSTCreation {
 

@@ -13,8 +13,7 @@ public class EmployeeMain {
 	public static void main(String[] args) {
 
 		Employee emp = new Employee();
-
-		emp.setAge(12);
+		emp.setAge(23);
 		emp.setName("rahul");
 		emp.setDepartment("HLS");
 		emp.setDesignation("Engineer");

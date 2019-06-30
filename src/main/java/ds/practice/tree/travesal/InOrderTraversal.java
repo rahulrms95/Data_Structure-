@@ -1,6 +1,6 @@
-package ds.tree.travesal;
+package ds.practice.tree.travesal;
 
-import ds.tree.pojo.TreeNode;
+import ds.practice.tree.pojo.TreeNode;
 
 public class InOrderTraversal implements Traversal<Integer>{
 	

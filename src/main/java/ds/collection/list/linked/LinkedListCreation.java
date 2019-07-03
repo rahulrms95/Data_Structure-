@@ -21,11 +21,14 @@ public class LinkedListCreation {
 			head = addNode(head,val);
 			size--;
 		}
-		
-		printReverse(head);
-		System.out.println();
+
 		print(head);
-	
+		System.out.println();
+		System.out.println(getMiddleNode(head).getValue());
+		//printReverse(head);
+		System.out.println();
+		//print(head);
+
 	}
 
 	public static LLNode addNode(LLNode root,int val)
@@ -85,6 +88,19 @@ public class LinkedListCreation {
 		head = prev;
 
 		return head;
+	}
+
+	public static LLNode getMiddleNode(LLNode root)
+	{
+		LLNode slow = root;
+		LLNode fast = root;
+		while(fast != root && fast.next !=null){
+
+			slow = slow.next;
+			fast = fast.next.next;
+		}
+		
+		return slow;
 	}
 
 }

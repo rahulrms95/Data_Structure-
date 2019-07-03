@@ -94,16 +94,16 @@ public class TreeUtility<K> {
 				currentNode = que.remove();
 				if(i<arr.length)
 				{
-				currentNode.left = new TreeNode<K>(arr[i]);
-				i++;
-				que.add(currentNode.left);
+					currentNode.left = new TreeNode<K>(arr[i]);
+					i++;
+					que.add(currentNode.left);
 				}
-				
+
 				if(i<arr.length)
 				{
-				currentNode.right = new TreeNode<K>(arr[i]);
-				i++;
-				que.add(currentNode.right);
+					currentNode.right = new TreeNode<K>(arr[i]);
+					i++;
+					que.add(currentNode.right);
 				}
 			}
 
@@ -119,5 +119,33 @@ public class TreeUtility<K> {
 
 		}
 		return root;
+	}
+
+	public static TreeNode<?> createTree(int arr[],int i,TreeNode<?> root)
+	{
+		if(root == null)
+		{
+			root = new TreeNode<Integer>(arr[i]);
+		}
+		else
+		{
+			createTree(arr,i+1,root.left);
+			createTree(arr, i+2, root.right);
+		}
+
+		return root;
+	}
+	
+	public static void print(TreeNode<?> root)
+	{
+		if(root == null)
+		{
+			return ;
+		}
+		
+		System.out.print(root.getValue()+" ");
+		print(root.left);
+		print(root.right);
+		
 	}
 }

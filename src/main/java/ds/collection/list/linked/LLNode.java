@@ -3,7 +3,7 @@ package ds.collection.list.linked;
 public class LLNode {
 
 	int value;
-	LLNode next;
+	public static LLNode next;
 	
 	public LLNode(int val)
 	{

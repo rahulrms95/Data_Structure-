@@ -5,6 +5,19 @@ public class Person implements Comparable<Person>{
 	private String name;
 	private int age;
 	
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return (name+age).hashCode();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		Person p = (Person)obj;
+		return (this.name.equals(p.name) && this.age-p.age==0)?true:false;
+	}
+	
 	public Person(String na,int a)
 	{
 		this.setName(na);

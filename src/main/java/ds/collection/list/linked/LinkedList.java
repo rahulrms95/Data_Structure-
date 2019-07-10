@@ -41,11 +41,7 @@ public class LinkedList {
 	{
 		while(lst!= null)
 		{
-			System.out.print(lst.getValue());
-			if(lst.next == null) 
-			{
-				return;
-			}
+			System.out.print(lst.getValue()+" ");
 			lst  = lst.next;
 		}
 		

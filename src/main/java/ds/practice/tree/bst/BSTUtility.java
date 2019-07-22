@@ -4,24 +4,33 @@ import ds.practice.tree.pojo.TreeNode;
 
 public class BSTUtility {
 
-	TreeNode<Integer> root;
-	
 	public BSTUtility() {
 		// TODO Auto-generated constructor stub
-		root = null;
 	}
-	
+
 	public static void main(String[] args) {
-		
+
 	}
-	
-	public TreeNode<Integer> createBST(int arr[])
+
+	/**
+	 * To Create Binary Search Tree for given array input
+	 * 
+	 * **/
+	public TreeNode<Integer> createBST(TreeNode<Integer> root ,int arr[],int index)
 	{
-		if(arr != null && arr.length>0 && root == null)
+		if(root == null)
 		{
-			root = new TreeNode<Integer>(arr[0]);
+			root = new TreeNode<Integer>(arr[index]);
+			index = index+1;
 		}
-		
+		if(index< arr.length && root.getValue() > arr[index])
+		{
+			root.left = createBST(root, arr,index+1);
+		}
+		else if(index< arr.length)
+		{
+			root.right = createBST(root, arr,index+1);
+		}
 		return root;
 	}
 }

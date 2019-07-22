@@ -40,7 +40,7 @@ public class SpiralMatrix {
 		{
 			for(int j=0;j<mat[0].length;j++)
 			{
-				System.out.print(mat[i][j]);
+				System.out.print(mat[i][j]+" ");
 			}
 			System.out.println();
 		}

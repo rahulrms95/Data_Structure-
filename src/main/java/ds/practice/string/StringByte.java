@@ -18,5 +18,12 @@ public class StringByte {
 			System.out.print((char)bytes[i]);
 		}
 		
+		System.out.println();
+		
+		String name="rahul";
+		name = name+"kumar";
+		String nam = "rahulkumar";
+		System.out.println(name.hashCode()+" "+nam.hashCode());
+		
 	}
 }

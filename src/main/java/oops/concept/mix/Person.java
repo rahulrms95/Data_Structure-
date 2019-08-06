@@ -1,10 +1,15 @@
 package oops.concept.mix;
 
-public class Person implements Comparable<Person>{
+public class Person implements Comparable<Person>,Cloneable{
 
 	private String name;
 	private int age;
 	
+	
+	public Object clone() throws CloneNotSupportedException
+	{
+		return super.clone();
+	}
 	@Override
 	public int hashCode() {
 		// TODO Auto-generated method stub

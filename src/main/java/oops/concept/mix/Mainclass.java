@@ -19,21 +19,23 @@ public class Mainclass {
 		
 		Person p3 = new Person("abc", 12);
 		System.out.println(map.get(p3));
-		/*CloneObject ob = new CloneObject(24, "rahul");
+		
+		
+		CloneObject ob = new CloneObject(24, "rahul",p1);
 		CloneObject copy = (CloneObject) ob.clone();
+		System.out.println(ob);
+		System.out.println(copy);
 		print(ob);
 		print(copy);
-		ob.setName("rrr");
-		ob.setAge(33);
+		/*ob.setName("rrr");
+		ob.setAge(33);*/
+		ob.p.setName("rahull");
 		print(ob);
-		print(copy);*/
+		print(copy);
 	}
 	
 	public static void print(CloneObject ob)
 	{
-		System.out.println(ob.name+" "+ob.age);
-		
-		
-		
+		System.out.println(ob.name+" "+ob.age+" "+ob.p.getName()+" "+ob.p.getAge());
 	}
 }

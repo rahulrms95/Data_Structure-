@@ -10,15 +10,15 @@ public class ShortestPath {
 		}
 		if(i>0 && j<0)
 		{
-			shortestPath(mat, i-1, j, result+mat[i][j]);
-			shortestPath(mat, i, j-1, result+mat[i][j]);
+			return Math.max(shortestPath(mat, i-1, j, result+mat[i][j]),
+			shortestPath(mat, i, j-1, result+mat[i][j]));
 		}
 		else 	if(i>0 && j<0)
 		{
-			shortestPath(mat, i-1, j, result+mat[i][j]);
-			shortestPath(mat, i, j-1, result+mat[i][j]);
+			return Math.max(shortestPath(mat, i-1, j, result+mat[i][j]),
+			shortestPath(mat, i, j-1, result+mat[i][j]));
 		}
-		return Math.max(shortestPath(mat, i-1, j, result+mat[i][j]),shortestPath(mat, i, j-1, result+mat[i][j]));
+		return result;
 	}
 
 	public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class ShortestPath {
 		}
 		catch(Exception e)
 		{
-
+			e.printStackTrace();
 		}
 	}
 }

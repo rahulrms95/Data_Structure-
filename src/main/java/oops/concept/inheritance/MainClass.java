@@ -7,6 +7,22 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
+		
+		A a = new B();
+		//a.staticMethod();
+		a.show();
+		System.out.println(a.type);
+		Object ob;
+		B b = new B();
+		b.getNum();
+		b.staticMethod();
+		b.show();
+		System.out.println(b.type);
+		
+		A a1 = new A();
+		a1.staticMethod();
+		a1.show();
+		System.out.println(a1.type);
 		/*System.out.println(" Base Class Reference ");
 		BaseClass base = new ChildClass("test");
 		base.show();

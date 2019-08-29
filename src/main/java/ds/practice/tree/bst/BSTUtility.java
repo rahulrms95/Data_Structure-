@@ -16,7 +16,7 @@ public class BSTUtility {
 	 * To Create Binary Search Tree for given array input
 	 * 
 	 * **/
-	public TreeNode<Integer> createBST(TreeNode<Integer> root ,int arr[],int index)
+	public static TreeNode<Integer> createBST(TreeNode<Integer> root ,int arr[],int index)
 	{
 		if(root == null)
 		{
@@ -33,4 +33,6 @@ public class BSTUtility {
 		}
 		return root;
 	}
+	
+	
 }

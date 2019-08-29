@@ -1,5 +1,6 @@
 package oops.concept.serialization;
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -19,7 +20,16 @@ public class EmployeeMain {
 		emp.setDesignation("Engineer");
 		emp.setEmp_id("1302");
 		//storeData(emp);
-
+		String stringObj = emp.getClass().getName();
+		try {
+			ObjectOutputStream ob = new ObjectOutputStream(new ByteArrayOutputStream());
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(stringObj);
+	//	ObjectInputStream oib = new ObjectInputStream(new Byte(stringObj));
 		Employee empOb = (Employee) retrieveObjFromFile("employee.txt");
 		System.out.println(empOb.getName()+" "+empOb.getEmp_id()+" "+empOb.getDepartment()+" "+empOb.getAge());
 	}
